@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*#fp-nav 애니메이션 시작*/
+@keyframes s-nav1 {
+  0%{transform: translateX(0);}
+  20%{transform: translateX(80px);}
+  80%{transform: translateX(80px);}
+  100%{transform: translateX(0);}
+}
+
+@keyframes s-nav2 {
+  0%{transform: translateX(0);}
+  20%{transform: translateX(80px);}
+  80%{transform: translateX(80px);}
+  100%{transform: translateX(0);}
+}
+
+@keyframes s-nav3 {
+  0%{transform: translateX(0);}
+  20%{transform: translateX(80px);}
+  80%{transform: translateX(80px);}
+  100%{transform: translateX(0);}
+}
+
+@keyframes s-nav4 {
+  0%{transform: translateX(0);}
+  20%{transform: translateX(80px);}
+  80%{transform: translateX(80px);}
+  100%{transform: translateX(0);}
+}
+
+@keyframes s-nav5 {
+  0%{transform: translateX(0);}
+  20%{transform: translateX(80px);}
+  80%{transform: translateX(80px);}
+  100%{transform: translateX(0);}
+}
+
+/*#fp-nav 애니메이션 끝*/
