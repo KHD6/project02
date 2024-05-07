@@ -74,8 +74,23 @@
 #visual header .mobile nav ul.depth02 li:last-child{margin-bottom: 0;}
 #visual header .mobile nav ul.depth02 li:hover a{color: #289f5d;}
 
-
 /*header 끝*/
+
+/*event 시작*/
+#visual .event{position: relative; padding-top: 71px;}
+#visual .event .m-event .m-mySwiper{border-bottom: 1px solid #ccc; padding: 15px 0; margin-bottom: 35px;}
+#visual .event .m-event .m-mySwiper li{height: 88px;}
+#visual .event .m-event .m-mySwiper img{width: 100%; border-radius: 25px;}
+#visual .event .m-event .m-mySwiper .m-swiper-pagination{text-align: center; padding-top: 20px;}
+#visual .event .pc-event{display: none;}
+
+#visual .event .m-btn ul{display: flex; justify-content: space-between;}
+#visual .event .m-btn ul li{width: calc((100% - 27px) / 4);}
+#visual .event .m-btn ul li img{width: 100%;}
+#visual .event .m-btn ul li a{font-size: 15px; text-align: center;}
+
+
+/*event 끝*/
 
 
 /*1024px ~ 1920px 시작*/
@@ -140,6 +155,10 @@
   #visual header .pc-header .h-info ul li:last-child{margin-right: 0;}
   
   /*header 끝*/
+
+  /*event 시작*/
+  
+  /*event 끝*/
   
 }
 /*1024px ~ 1920px 시작*/
@@ -149,8 +168,11 @@
 @media screen and (min-width : 1920px) {
 
   /*header 시작*/
-
   /*header 끝*/
+
+  /*event 시작*/
+  
+  /*event 끝*/
   
 }
 /*1920px ~ 끝*/

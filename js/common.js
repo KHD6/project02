@@ -45,6 +45,44 @@ $(document).ready(function() {
   });
   /*m-menuwrap nav 끝*/
 
+    /*M 슬라이드 js 시작*/
+    var mswiper = new Swiper(".m-mySwiper", {
+      loop: true,
+      slidesPerView: 1.4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".m-swiper-pagination",
+      },
+    });
+    /*M 슬라이드 js 끝*/
+
+  /*PC 슬라이드 js 시작*/
+  var mainSwiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination1",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
+  var pagingSwiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination2",
+      type: "progressbar",
+    },
+  });
+  
+  mainSwiper.controller.control = pagingSwiper;
+  /*PC 슬라이드 js 끝*/
+
 
 
 });
