@@ -22,7 +22,7 @@
 /*header 시작*/
 
 #visual .fp-tableCell header{position: absolute; top: 0; left: 0; width: 100%;}
-#visual header{padding: 17px 0; border-bottom: 3px solid #73b042;}
+#visual header{padding: 17px 0; border-bottom: 3px solid #73b042; z-index: 999;}
 #visual header .mobile{display: flex; justify-content: space-between;}
 #visual header h1{width: 93px;}
 #visual header h1 a img{width: 100%;}
@@ -78,19 +78,23 @@
 
 /*event 시작*/
 #visual .event{position: relative; padding-top: 71px;}
-#visual .event .m-event .m-mySwiper{border-bottom: 1px solid #ccc; padding: 15px 0; margin-bottom: 35px;}
-#visual .event .m-event .m-mySwiper li{height: 88px;}
-#visual .event .m-event .m-mySwiper img{width: 100%; border-radius: 25px;}
+#visual .event .m-event .m-mySwiper{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 15px 0; margin-bottom: 35px;}
+#visual .event .m-event .m-mySwiper img{width: 100%; height: 100%; object-fit: cover; border-radius: 25px;}
 #visual .event .m-event .m-mySwiper .m-swiper-pagination{text-align: center; padding-top: 20px;}
 #visual .event .pc-event{display: none;}
 
 #visual .event .m-btn ul{display: flex; justify-content: space-between;}
 #visual .event .m-btn ul li{width: calc((100% - 27px) / 4);}
 #visual .event .m-btn ul li img{width: 100%;}
-#visual .event .m-btn ul li a{font-size: 15px; text-align: center;}
+#visual .event .m-btn ul li a{font-size: 14px; text-align: center;}
 
 
 /*event 끝*/
+
+
+
+
+
 
 
 /*1024px ~ 1920px 시작*/
@@ -157,11 +161,40 @@
   /*header 끝*/
 
   /*event 시작*/
-  
+  #visual .event .m-event,
+  #visual .event .m-btn{display: none;}
+  #visual .fp-tableCell{position: absolute; top: 0; left: 0;}
+  #visual .event .pc-event{display: block; padding-top: 154px;}
+  #visual .event .pc-event .inner{position: relative; width: 984px; height: 482px;}
+  #visual .event .pc-event img{width: 100%; height: 100%; object-fit: cover;}
+  #visual .event .pc-event .Swiper1{display: none;}
+  #visual .event .pc-event .Swiper2{width: 354px; height: 232px; position: absolute; top: 0; left: 0; border-radius: 25px;}
+  #visual .event .pc-event .Swiper3{width: 356px; height: 434px; position: absolute; top: 0; left: 370px; border-radius: 25px;}
+  #visual .event .pc-event .Swiper4{width: 232px; height: 434px; position: absolute; top: 0; right: 0; border-radius: 25px;}
+  #visual .event .pc-event .Swiper5{display: none;}
+  #visual .event .pc-event h2{position: absolute; bottom: 113px; left: 0; color: #289F5D; font-size: 60px; font-family: OKGUNG; font-weight: normal;}
+  #visual .event .pc-event .swiper-btnbox{position: absolute;bottom: 70px; left: 250px; width: 100px; height: 40px;}
+  #visual .event .pc-event .swiper-button-next{width: 40px; height: 40px; background: url(../img/icon/btn-next.png) no-repeat center / cover; left: 60px;}
+  #visual .event .pc-event .swiper-button-prev{width: 40px; height: 40px; background: url(../img/icon/btn-prev.png) no-repeat center / cover;}
+  #visual .event .pc-event .swiper-button-next::after,
+  #visual .event .pc-event .swiper-button-prev::after{display: none;}
+  #visual .event .pc-event .pagination-container{position: absolute; bottom: 95px; left: 0; width: 294px;}
+  #visual .event .pc-event .pagination-container .swiper-pagination1{position: absolute; top: 0; left: 0;}
+  #visual .event .pc-event .pagination-container .swiper-pagination2{position: absolute; top: 0; left: 20px; width: 190px;}
+  .swiper-pagination1.swiper-pagination-fraction.swiper-pagination-horizontal{font-size: 0; color: transparent;}
+  #visual .event .pc-event .pagination-container .swiper-pagination-current{position: absolute; top: -12px; left: 0px; font-size: 20px; color: #000; font-weight: bold;}
+  #visual .event .pc-event .pagination-container .swiper-pagination-total{position: absolute; top: -12px; right: 58px; font-size: 20px; color: #000; font-weight: bold;}
+  .swiper-pagination-progressbar{background: #000;}
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:#289F5D;}
   /*event 끝*/
   
 }
 /*1024px ~ 1920px 시작*/
+
+
+
+
+
 
 
 /*1920px ~ 시작*/
@@ -171,7 +204,21 @@
   /*header 끝*/
 
   /*event 시작*/
-  
+  #visual .event .pc-event .inner{width: 1920px; height: 926px;}
+  #visual .event .pc-event .Swiper1,
+  #visual .event .pc-event .Swiper5{display: block; position: absolute; border-radius: 25px;}
+  #visual .event .pc-event .Swiper1{width: 400px; height: 400px; top: 0; left: 0; transform: translateX(-50%);}
+  #visual .event .pc-event .Swiper2{width: 426px; height: 300px; top: 187px; left: 25%; transform: translateX(-50%);}
+  #visual .event .pc-event .Swiper3{width: 430px; height: 568px; top: 0; left: 50%; transform: translateX(-50%);}
+  #visual .event .pc-event .Swiper4{width: 390px; height: 390px; top: 48px; left: 70%; transform: translateX(-50%);}
+  #visual .event .pc-event .Swiper5{width: 400px; height: 400px; top: 168px; left: 100%; transform: translateX(-50%);}
+  #visual .event .pc-event .swiper-btnbox{top: 55%; left: 80%; width: 100px; height: 40px;}
+  #visual .event .pc-event .pagination-container{top: 56.5%; left: 67%;}
+  .swiper-pagination1.swiper-pagination-fraction.swiper-pagination-horizontal{width: 290px;}
+  #visual .event .pc-event .pagination-container .swiper-pagination-current{top: -12px; left: -40px;}
+  #visual .event .pc-event .pagination-container .swiper-pagination-total{top: -12px; right: 38px;}
+  #visual .event .pc-event .pagination-container .swiper-pagination2{top: 0; left: -20px; width: 250px;}
+  #visual .event .pc-event h2{top: 5%; left: 14%;}
   /*event 끝*/
   
 }
