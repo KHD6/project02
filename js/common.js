@@ -44,6 +44,8 @@ $(document).ready(function() {
   });
   /*m-menuwrap nav 끝*/
 
+
+
   /*M 슬라이드 js 시작*/
    var mswiper = new Swiper(".m-mySwiper", {
      loop: true,
@@ -59,6 +61,8 @@ $(document).ready(function() {
     },
    });
   /*M 슬라이드 js 끝*/
+
+
 
   /*PC 슬라이드 js 시작*/
   var subSwiper = new Swiper(".Swiper1", {
@@ -159,6 +163,8 @@ $(document).ready(function() {
   mainSwiper.controller.control = pagingSwiper;
   /*PC 슬라이드 js 끝*/
 
+
+
   /*best m-슬라이드 시작*/
   var mbestswiper = new Swiper(".m-bestSwiper", {
     slidesPerView: 1.5,
@@ -171,21 +177,34 @@ $(document).ready(function() {
   });
   /*best m-슬라이드 끝*/
 
-    /*best pc-슬라이드 시작*/
-    var bestswiper = new Swiper(".bestSwiper", {
-      slidesPerView: 3,
-      spaceBetween: 0,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next.bestbtn",
-        prevEl: ".swiper-button-prev.bestbtn",
-      },
 
-    });
-    /*best pc-슬라이드 끝*/
+
+  /*best pc-슬라이드 시작*/
+  var bestswiper = new Swiper(".bestSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+     autoplay: {
+       delay: 10000,
+       disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.bestbtn",
+      prevEl: ".swiper-button-prev.bestbtn",
+    },
+  });
+ /*best pc-슬라이드 끝*/
+
+
+
+ /*chef m-슬라이드 시작*/
+ var mchefSwiper = new Swiper(".m-chefSwiper", {
+  loop: true,
+  effect: "cards",
+  grabCursor: true,
+});
+ /*chef m-슬라이드 끝*/
+
+
 
   
 
