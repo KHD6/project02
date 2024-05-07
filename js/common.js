@@ -5,16 +5,15 @@ $(document).ready(function() {
 		//options here
 		autoScrolling:true,
 		scrollHorizontally: true,
-    sectionsColor : ['#fff', '#f3f3f3', '#fff', '#f3f3f3', '#fff', '#f3f3f3'],
+    sectionsColor : ['#fff', '', '#fff', '#f3f3f3', '#fff', '#f3f3f3'],
     navigation: true,
-    anchors:['visual', 'best', 'chef', 'recipe', 'food_lab', 'footer'],
+    anchors:['visual1', 'best2', 'chef3', 'recipe4', 'food_lab5', 'footer6'],
     navigationTooltips: ['VISUAL', 'BEST', 'CHEF', 'RECIPE', 'FOOD<br>LAB', 'FOOTER'],
     navigationPosition: 'left',
     showActiveTooltip: true,
     responsiveWidth: 1024,
 	});
   /*fullpage 끝*/
-
 
 
   /*m-menuwrap 시작*/
@@ -159,6 +158,34 @@ $(document).ready(function() {
   
   mainSwiper.controller.control = pagingSwiper;
   /*PC 슬라이드 js 끝*/
+
+  /*best m-슬라이드 시작*/
+  var mbestswiper = new Swiper(".m-bestSwiper", {
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    centeredSlides : true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+  /*best m-슬라이드 끝*/
+
+    /*best pc-슬라이드 시작*/
+    var bestswiper = new Swiper(".bestSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next.bestbtn",
+        prevEl: ".swiper-button-prev.bestbtn",
+      },
+
+    });
+    /*best pc-슬라이드 끝*/
 
   
 
