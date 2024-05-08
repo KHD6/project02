@@ -204,6 +204,161 @@ $(document).ready(function() {
 });
  /*chef m-슬라이드 끝*/
 
+ /*recipe 애니메이션 시작*/
+ if($(window).width() < 1024) {
+   var recipeli = $("#recipe .recipe-box li")
+   var recipeli1 = $("#recipe .recipe-box li:nth-child(1)")
+   var recipeli2 = $("#recipe .recipe-box li:nth-child(2)")
+   var recipeli3 = $("#recipe .recipe-box li:nth-child(3)")
+   var recipeli4 = $("#recipe .recipe-box li:nth-child(4)")
+   var recipeli5 = $("#recipe .recipe-box li:nth-child(5)")
+
+   $(recipeli1).click(function(){
+    if($(this).hasClass("card-on") === true){
+      $(this).removeClass("card-on")
+      $(recipeli).removeClass("aftercard")
+    }else{
+      $(recipeli).removeClass("card-on")
+      $(this).addClass("card-on")
+      $(recipeli).removeClass("aftercard")
+      $(recipeli2).addClass("aftercard")
+      $(recipeli3).addClass("aftercard")
+      $(recipeli4).addClass("aftercard")
+      $(recipeli5).addClass("aftercard")
+    }
+   });
+
+   $(recipeli2).click(function(){
+    if($(this).hasClass("card-on") === true){
+      $(this).removeClass("card-on")
+      $(recipeli).removeClass("aftercard")
+    }else{
+      $(recipeli).removeClass("card-on")
+      $(this).addClass("card-on")
+      $(recipeli).removeClass("aftercard")
+      $(recipeli3).addClass("aftercard")
+      $(recipeli4).addClass("aftercard")
+      $(recipeli5).addClass("aftercard")
+    }
+   });
+
+   $(recipeli3).click(function(){
+    if($(this).hasClass("card-on") === true){
+      $(this).removeClass("card-on")
+      $(recipeli).removeClass("aftercard")
+    }else{
+      $(this).addClass("card-on")
+      $(recipeli).removeClass("card-on")
+      $(recipeli).removeClass("aftercard")
+      $(recipeli4).addClass("aftercard")
+      $(recipeli5).addClass("aftercard")
+    }
+   });
+
+   $(recipeli4).click(function(){
+    if($(this).hasClass("card-on") === true){
+      $(this).removeClass("card-on")
+      $(recipeli).removeClass("aftercard")
+    }else{
+      $(recipeli).removeClass("card-on")
+      $(this).addClass("card-on")
+      $(recipeli).removeClass("aftercard")
+      $(recipeli5).addClass("aftercard")
+    }
+   });
+
+   $(recipeli5).click(function(){
+    if($(this).hasClass("card-on") === true){
+      $(this).removeClass("card-on")
+      $(recipeli).removeClass("aftercard")
+    }else{
+      $(recipeli).removeClass("card-on")
+      $(this).addClass("card-on")
+      $(recipeli).removeClass("aftercard")
+    }
+   });
+  }
+
+  $(window).resize(function(){
+
+   if($(window).width() < 1024) {
+    var recipeli = $("#recipe .recipe-box li")
+    var recipeli1 = $("#recipe .recipe-box li:nth-child(1)")
+    var recipeli2 = $("#recipe .recipe-box li:nth-child(2)")
+    var recipeli3 = $("#recipe .recipe-box li:nth-child(3)")
+    var recipeli4 = $("#recipe .recipe-box li:nth-child(4)")
+    var recipeli5 = $("#recipe .recipe-box li:nth-child(5)")
+ 
+    $(recipeli1).click(function(){
+     if($(this).hasClass("card-on") === true){
+       $(this).removeClass("card-on")
+       $(recipeli).removeClass("aftercard")
+     }else{
+       $(recipeli).removeClass("card-on")
+       $(this).addClass("card-on")
+       $(recipeli).removeClass("aftercard")
+       $(recipeli2).addClass("aftercard")
+       $(recipeli3).addClass("aftercard")
+       $(recipeli4).addClass("aftercard")
+       $(recipeli5).addClass("aftercard")
+     }
+    });
+ 
+    $(recipeli2).click(function(){
+     if($(this).hasClass("card-on") === true){
+       $(this).removeClass("card-on")
+       $(recipeli).removeClass("aftercard")
+     }else{
+       $(recipeli).removeClass("card-on")
+       $(this).addClass("card-on")
+       $(recipeli).removeClass("aftercard")
+       $(recipeli3).addClass("aftercard")
+       $(recipeli4).addClass("aftercard")
+       $(recipeli5).addClass("aftercard")
+     }
+    });
+ 
+    $(recipeli3).click(function(){
+     if($(this).hasClass("card-on") === true){
+       $(this).removeClass("card-on")
+       $(recipeli).removeClass("aftercard")
+     }else{
+       $(this).addClass("card-on")
+       $(recipeli).removeClass("card-on")
+       $(recipeli).removeClass("aftercard")
+       $(recipeli4).addClass("aftercard")
+       $(recipeli5).addClass("aftercard")
+     }
+    });
+ 
+    $(recipeli4).click(function(){
+     if($(this).hasClass("card-on") === true){
+       $(this).removeClass("card-on")
+       $(recipeli).removeClass("aftercard")
+     }else{
+       $(recipeli).removeClass("card-on")
+       $(this).addClass("card-on")
+       $(recipeli).removeClass("aftercard")
+       $(recipeli5).addClass("aftercard")
+     }
+    });
+ 
+    $(recipeli5).click(function(){
+     if($(this).hasClass("card-on") === true){
+       $(this).removeClass("card-on")
+       $(recipeli).removeClass("aftercard")
+     }else{
+       $(recipeli).removeClass("card-on")
+       $(this).addClass("card-on")
+       $(recipeli).removeClass("aftercard")
+     }
+    });    
+    }
+  });
+ /*recipe 애니메이션 끝*/
+
+
+
 
 
   
