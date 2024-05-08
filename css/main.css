@@ -119,7 +119,7 @@
 
 
 /*chef 시작*/
-#chef .head-box{text-align: center; margin-bottom: 30px;}
+#chef .head-box{text-align: center; margin-bottom: 30px; padding-top: 30px;}
 #chef .head-box h2{font-size: 30px; font-family: OKGUNG;}
 #chef .head-box p{display: none;}
 #chef .m-chef .inner{max-width: 330px;}
@@ -143,7 +143,7 @@
 
 
 /*recipe 시작*/
-#recipe .head-box{text-align: center; margin-bottom: 30px;}
+#recipe .head-box{text-align: center; margin-bottom: 30px; padding-top: 30px;}
 #recipe .head-box h2{font-size: 30px; font-family: OKGUNG; margin-bottom: 10px;}
 #recipe .head-box p{display: none;}
 #recipe .head-box .more{text-align: right; height: 16px;}
@@ -169,10 +169,26 @@
 #recipe .recipe-box .card ul li:hover a{color: #73b042;}
 
 
-
-
-
 /*recipe 끝*/
+
+
+
+/*fodd lab 시작*/
+#food_lab .head-box{text-align: center; margin-bottom: 30px; padding-top: 30px;}
+#food_lab .head-box h2{font-size: 30px; font-family: OKGUNG; margin-bottom: 10px;}
+#food_lab .head-box p{display: none;}
+#food_lab .head-box .more{text-align: right; height: 16px;}
+#food_lab .head-box .more a{font-size: 14px; padding-right: 20px; background: url(../img/icon/more-btn.png) no-repeat right / auto 16px; padding-bottom: 2px;}
+#food_lab .m-fl-box dl{width: 296px; height: 384px; background: url(../img/lab_main_bg.png) no-repeat center; border-radius: 25px; padding: 10px 43px;}
+#food_lab .m-fl-box dl dt h3{font-size: 20px; margin-bottom: 8px; font-weight: bold;}
+#food_lab .m-fl-box dl dt p{font-size: 14px; color: #888; display: flex; justify-content: space-between; margin-bottom: 8px;}
+#food_lab .m-fl-box dl dd .img-box{width: 150px; height: 150px; margin: 0 auto; margin-bottom: 14px;}
+#food_lab .m-fl-box dl dd .img-box img{width: 100%; height: 100%; object-fit: cover; border-radius: 25px;}
+#food_lab .m-fl-box dl dd .txt-box p{font-size: 16px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; max-height: 110px;}
+
+#food_lab .pc-fl-box{display: none;}
+
+/*fodd lab 끝*/
 
 
 
@@ -339,15 +355,17 @@
 
 
   /*recipe 시작*/
+  #recipe .head-box{margin-bottom: 100px;}
   #recipe .head-box h2{font-size: 60px;}
   #recipe .head-box .more{text-align: right; height: 16px;}
   #recipe .head-box .more a{font-size: 20px; font-weight: bold;}
 
-  #recipe .recipe-box .inner > ul{width: 70%;height: auto; display: flex; justify-content: space-between; position: static; margin: 0 auto;}
-  #recipe .recipe-box ul li.card{width: 10%; transition: all 0.3s; border-radius: 25px; padding: 10px; min-width: 120px;}
+  #recipe .recipe-box .inner > ul{width: 90%;height: auto; display: flex; justify-content: center; position: static; margin: 0 auto;}
+  #recipe .recipe-box ul li.card{width: 100px; transition: all 0.3s; border-radius: 25px; padding: 20px 17.5px;}
   #recipe .recipe-box ul li.card .cardbg{height: 365px; position: static; padding: 0px; min-width: 96px; padding-top: 20px; display: flex; transition: all 0.3s;}
   #recipe .recipe-box ul li.card ul{width: 0; overflow: hidden; display: flex; flex-wrap: wrap;}  
   #recipe .recipe-box .card .h-box{display: block; padding: 0 17.5px}
+  #recipe .recipe-box .card .h-box .img-box{margin-right: 0px; margin-bottom: 12px;}
   #recipe .recipe-box .card .h-box h3{width: 20px;height: 90px; writing-mode: vertical-lr; font-size: 25px; text-shadow: 0 0 5px #000000;}
   #recipe .recipe-box .card ul li{margin-right: 10px; margin-bottom: 10px; border: 2px solid #b3b3b3; border-radius: 35px; background-color: #fff; display: inline-block;}
   #recipe .recipe-box .card ul li a{padding: 5px 10px; color: #b3b3b3; font-size: 14px; font-weight: bold; line-height: 30px;}
@@ -355,15 +373,48 @@
   #recipe .recipe-box .card ul li:hover a{color: #73b042;}
 
   #recipe .recipe-box ul li.card:hover{width: 540px; height: 385px; background-color: #fff; -webkit-box-shadow: 0 0 10px 10px rgba(0,0,0,0.5); box-shadow: 0 0 10px 10px rgba(0,0,0,0.5); transform: translateY(-50px);}
-  #recipe .recipe-box ul li.card:hover .cardbg{width: 520px;}
+  #recipe .recipe-box ul li.card:hover .cardbg{width: 100%; height: 350px;}
   #recipe .recipe-box ul li.card:hover ul{display: block; width: 500px;}
-
-
-
-
-
+  #recipe .recipe-box ul li.card:hover ul li{animation: recipe 0.5s 0.3s backwards;}
   
   /*recipe 끝*/
+
+
+
+  /*fodd lab 시작*/
+  #food_lab .head-box{margin-bottom: 100px;}
+  #food_lab .head-box h2{font-size: 60px;}
+  #food_lab .head-box .more{text-align: right; height: 16px;}
+  #food_lab .head-box .more a{font-size: 20px; font-weight: bold;}
+
+  #food_lab .m-fl-box{display: none;}
+  #food_lab .pc-fl-box{display: block;}
+  #food_lab .pc-fl-box .inner{display: flex; justify-content: center;}
+  #food_lab .pc-fl-box .fl-Swiper01,
+  #food_lab .pc-fl-box .fl-Swiper05{display: none;}
+  #food_lab .pc-fl-box .fl-Swiper02,
+  #food_lab .pc-fl-box .fl-Swiper04{width: 200px; height: 200px; margin-top: 135px;}
+  #food_lab .pc-fl-box .fl-Swiper03{width: 390px;}
+
+  #food_lab .pc-fl-box .img-box{width: 200px; height: 200px;}
+  #food_lab .pc-fl-box img{width: 100%; height: 100%; object-fit: cover; border-radius: 25px;}
+  #food_lab .pc-fl-box dl{width: 391px; height: 508px; background: url(../img/lab_main_bg.png) no-repeat center / cover; border-radius: 25px; padding: 15px 57px;}
+
+  #food_lab .pc-fl-box dl dt h3{font-size: 25px; margin-bottom: 13px;}
+  #food_lab .pc-fl-box dl dt p{font-size: 14px; color: #888; display: flex; justify-content: space-between; margin-bottom: 19px;}
+  #food_lab .pc-fl-box dl dd .img-box{width: 200px; height: 200px; margin: 0 auto; margin-bottom: 19px;}
+  #food_lab .pc-fl-box dl dd .img-box img{width: 100%; height: 100%; object-fit: cover; border-radius: 25px;}
+  #food_lab .pc-fl-box dl dd .txt-box p{font-size: 18px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; max-height: 130px;}
+
+  #food_lab .pc-fl-box .swiper-button-next{width: 40px; height: 40px; background: url(../img/icon/btn-next.png) no-repeat center / cover; transition: all 0.3s;}
+  #food_lab .pc-fl-box .swiper-button-prev{width: 40px; height: 40px; background: url(../img/icon/btn-prev.png) no-repeat center / cover; transition: all 0.3s;}
+  #food_lab .pc-fl-box .swiper-button-next:hover{background: url(../img/icon/food_lab-btn-next.png) no-repeat center / cover;}
+  #food_lab .pc-fl-box .swiper-button-prev:hover{background: url(../img/icon/food_lab-btn-prev.png) no-repeat center / cover;}
+  #food_lab .pc-fl-box .swiper-button-next::after,
+  #food_lab .pc-fl-box .swiper-button-prev::after{display: none;}
+  /*fodd lab 끝*/
+
+
   
 }
 /*1024px ~ 1920px 시작*/
@@ -429,7 +480,28 @@
   #recipe .head-box .f-wrap p{display: block; font-size: 25px;}
   #recipe .head-box .f-wrap .more{position: absolute; top: 0; right: 0;}
 
+
+  #recipe .recipe-box ul li.card{width: 200px;; padding: 20px; min-width: 150px;}
+  #recipe .recipe-box ul li.card .cardbg{width: 100%; height: 570px;}
+  #recipe .recipe-box .card .h-box{padding: 0 20px; margin: 0 auto;}
+  #recipe .recipe-box ul li.card:hover{width: 842px; height: 600px;}
+  #recipe .recipe-box ul li.card:hover .cardbg{width: 100%; height: 555px;}
+
+
   /*recipe 끝*/
+
+
+
+  /*fodd lab 시작*/
+
+  #food_lab .head-box .f-wrap{position: relative; margin-bottom: 80px;}
+  #food_lab .head-box .f-wrap p{display: block; font-size: 25px;}
+  #food_lab .head-box .f-wrap .more{position: absolute; top: 0; right: 0;}
+
+  #food_lab .pc-fl-box .fl-Swiper01,
+  #food_lab .pc-fl-box .fl-Swiper05{display: block; width: 200px; height: 200px; margin-top: 135px;}
+
+  /*fodd lab 끝*/
   
 }
 /*1920px ~ 끝*/

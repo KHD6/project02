@@ -357,6 +357,89 @@ $(document).ready(function() {
   });
  /*recipe 애니메이션 끝*/
 
+ /*m-Food Lab Swiper 시작*/
+ var mflSwiper = new Swiper(".fl-Swiper", {
+  loop: true,
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  centeredSlides : true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
+ /*m-Food Lab Swiper 끝*/
+
+
+  /*pc-Food Lab Swiper 시작*/
+  var pcflSwiper = new Swiper(".fl-Swiper01", {
+    loop: true,
+    allowTouchMove : false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.flbtn",
+      prevEl: ".swiper-button-prev.flbtn",
+    },
+  });
+
+  var pcflSwiper = new Swiper(".fl-Swiper02", {
+    loop: true,
+    allowTouchMove : false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.flbtn",
+      prevEl: ".swiper-button-prev.flbtn",
+    },
+  });
+
+  var pcflSwiper = new Swiper(".fl-Swiper03", {
+    loop: true,
+    allowTouchMove : false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.flbtn",
+      prevEl: ".swiper-button-prev.flbtn",
+    },
+  });
+
+  var pcflSwiper = new Swiper(".fl-Swiper04", {
+    loop: true,
+    allowTouchMove : false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.flbtn",
+      prevEl: ".swiper-button-prev.flbtn",
+    },
+  });
+
+  var pcflSwiper = new Swiper(".fl-Swiper05", {
+    loop: true,
+    allowTouchMove : false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.flbtn",
+      prevEl: ".swiper-button-prev.flbtn",
+    },
+  });
+   /*pc-Food Lab Swiper 끝*/
+
+
+
 
 
 

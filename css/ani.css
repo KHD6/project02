@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 /*#fp-nav 애니메이션 시작*/
+
 @keyframes s-nav1 {
   0%{transform: translateX(0);}
   20%{transform: translateX(80px);}
@@ -37,3 +38,10 @@
 }
 
 /*#fp-nav 애니메이션 끝*/
+
+/*recipe 애니메이션 시작*/
+@keyframes recipe {
+  0%{transform: scale(0); opacity: 0;}
+  100%{transform: scale(1); opacity: 1;}
+}
+/*recipe 애니메이션 시작*/
