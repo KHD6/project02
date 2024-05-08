@@ -98,17 +98,19 @@
 #best .m-best .head-box{height: 72px; background: url(../img/head-box-bg.png) no-repeat right / cover;}
 #best .m-best .head-box h2{font-size: 30px; color: #7f6846; line-height: 72px; font-family: OKGUNG;}
 #best .m-best .con-box{height: calc(100% - 72px); padding-top: 35px; background: url(../img/shopping_bg.png) no-repeat -200px / cover;}
-#best .m-best .con-box li{background-color: rgba(0, 0, 0, 0.65); padding: 25px 35px; min-height: 580px;}
+#best .m-best .con-box li{background-color: rgba(0, 0, 0, 0.65); padding: 25px 35px; max-height: 80%;}
 #best .m-best .con-box .img-box{max-width: 256px; max-height: 256px; margin: 0 auto 10px;}
 #best .m-best .con-box img{width: 100%; height: 100%; object-fit: cover;}
-#best .m-best .con-box .txt-box{color: #fff; border-top: 3px solid #fff; padding: 5px 0; max-width: 256px; min-height: 250px; margin: 0 auto; position: relative;}
+#best .m-best .con-box .txt-box{color: #fff; border-top: 3px solid #fff; padding: 5px 0; max-width: 256px; min-height: 250px; margin: 0 auto; position: relative; font-size: 15px;}
+#best .m-best .con-box .txt-box h3{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; max-height: 70px;}
+#best .m-best .con-box li:hover .txt-box h3{text-decoration: underline;}
 #best .m-best .con-box .txt-box .sub-txt{font-size: 14px;}
 #best .m-best .con-box .txt-box .price{font-size: 16px; font-weight: bold; text-align: right; position: absolute; bottom: 42px; right: 0px;}
 #best .m-best .con-box .txt-box .star{font-size: 10px; text-align: right; display: flex; justify-content: right; position: absolute; bottom: 25px; right: 0px;}
-#best .m-best .con-box .txt-box .star span:nth-child(1){display: block; width: 46px; height: 10px; background: url(../img/5star.png) no-repeat center / cover;}
+#best .m-best .con-box .txt-box .star span:nth-child(1){display: block; width: 46px; height: 10px; background: url(../img/5star.png) no-repeat center / contain;}
 
-#best .m-best .inner > h3{color: #fff; font-family: OKGUNG; font-weight: normal; font-size: 20px; position: absolute; bottom: 10%; left: 35px;}
-#best .m-best .more{position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%);}
+#best .m-best .inner > h3{color: #fff; font-family: OKGUNG; font-weight: normal; font-size: 20px; position: absolute; bottom: 5%; left: 35px;}
+#best .m-best .more{position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); z-index: 9;}
 #best .m-best .more a{display: block; width: 30px; height: 30px; border: 2px solid #fff; border-radius: 50%; text-align: center; color: #fff; font-size: 25px; line-height: 1;}
 
 #best .pc-best{display: none;}
