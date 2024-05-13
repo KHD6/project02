@@ -2,7 +2,7 @@
 
 /*mobile 시작*/
 
-.inner{width: calc(100% - 32px); margin: 0 auto;}
+.inner{width: calc(100% - 32px); margin: 0 auto; overflow: hidden;}
 
 /*mobile bottom 시작*/
 .pc-header{display: none;}
